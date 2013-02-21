@@ -1,0 +1,6 @@
+# Do not kill connection if route is down temporarily.
+TCPKeepAlive no
+
+# Allow ten minutes down time before giving up the connection.
+ServerAliveCountMax 30
+ServerAliveInterval 20
