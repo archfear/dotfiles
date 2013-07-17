@@ -4,3 +4,6 @@ TCPKeepAlive no
 # Allow ten minutes down time before giving up the connection.
 ServerAliveCountMax 30
 ServerAliveInterval 20
+
+User          ubuntu
+IdentityFile  ~/.ssh/bonobos-ec2.pem
