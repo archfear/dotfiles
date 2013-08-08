@@ -7,3 +7,12 @@ ServerAliveInterval 20
 
 User          ubuntu
 IdentityFile  ~/.ssh/bonobos-ec2.pem
+
+Host dofter.com
+  Hostname     dofter.com
+  User         ddofter
+
+Host uberdisk
+  Hostname     uberdisk.local
+  User         root
+  IdentityFile ~/.ssh/old_rsa
