@@ -1,0 +1,24 @@
+[alias]
+rb = pull --rebase
+co = checkout
+ca = !git add -A && git commit
+cleanup = !git branch --merged | grep -v '*' | xargs git branch -d
+wip = !git add -A && git commit -m "wip"
+ci = commit
+gr = log --graph --date-order -C -M --pretty=format:"<%h> %ad [%an] %Cgreen%d%Creset %s" --all --dat
+
+[format]
+pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+
+[hub]
+protocol = https
+
+[color]
+ui = auto
+
+[user]
+name = Dan Dofter
+email = dan@dofter.com
+
+[push]
+default = simple
